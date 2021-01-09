@@ -1,0 +1,16 @@
+\chapter{Evaluation Plan}
+ Gaidon et al. [5] show that pre-training a deep
+neural network on synthetic data leads to improved performance. 
+\section{Datasets}
+
+While image-level graded images are widely available, the lesion segmentation task suffers from a paucity of pixel-wise segmented data.
+
+\subsection{IDRiD}
+
+The Indian Diabetic Retinopathy Image Dataset (IDRiD) \cite{Porwal2018} was initially released in 2018 as part of the ``Diabetic Retinopathy: Segmentation and Grading Challenge'' held at ISBI-2018. It consists of 81 retinal fundus images with signs of DR, each of which are accompanied by binary masks for microaneurysms, soft exudates, hard exudates, and haemorrhages (where present) corresponding to pixel-level annotations. All 81 images also have masks for optic disks. Each image has a resolution of $4288\times 2848$.
+
+\subsection{FGADR}
+
+The Fine-Grained Annotated Diabetic Retinopathy (FGADR) \cite{9257400} dataset is a recent dataset released in 2020 by the authors of DR-GAN alongside their publication.
+
+\section{Metrics}

@@ -1,0 +1,77 @@
+\documentclass[a4paper, twoside]{report}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[
+    backend=biber, 
+    eprint=false,
+    url=false, 
+    sorting=none,
+    style=numeric
+]{biblatex}
+\addbibresource{./bibs/introduction.bib}
+\addbibresource{./bibs/background.bib}
+\addbibresource{./bibs/evaluation.bib}
+
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\usepackage{parskip}
+\usepackage{ragged2e}
+\usepackage[ruled]{algorithm2e}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{csquotes}
+
+% Used for checkmarks.
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+% Used for bullets in tables.
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\title{Generative Models for Producing Synthetic Retinal Fundus Images \\ \vspace{0.3cm} \Large Interim Report}
+\author{Joon-Ho Son}
+
+\begin{document}
+\input{title/title.tex}
+
+%% Commented for the interim report
+
+% \begin{abstract}
+% Your abstract goes here
+% \end{abstract}
+
+% \renewcommand{\abstractname}{Acknowledgements}
+% \begin{abstract}
+% Thanks mum!
+% \end{abstract}
+
+\tableofcontents
+% \listoffigures
+% \listoftables
+
+\input{introduction/introduction.tex}
+\input{background/background.tex}
+\input{project/project.tex}
+\input{evaluation/evaluation.tex}
+\input{ethics/ethics.tex}
+% \input{conclusion/conclusion.tex}
+\input{appendix/appendix.tex}
+
+\printbibliography
+
+\end{document}
